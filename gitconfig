@@ -14,6 +14,13 @@
 	df = diff
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
         recent = for-each-ref --sort=-committerdate refs/heads/
+	b = branch
+	cp = cherry-pick
+	pr = pull-request
+	s = status
+	debranch = !git branch -D $1 && git push origin :$1 && :
+	re-pair = commit --amend --no-edit --reset-author
+	touch = !git commit --amend --no-edit --date=\"`date`\"
 
 [user]
 	# email = random_githubber@indiegogo.com
