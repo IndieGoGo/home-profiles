@@ -5,7 +5,7 @@ Collection of profiles I find useful for development (particularly Ruby and Pyth
 To install, simply clone this repository into your home directory, and invoke the `mk_sym_links.sh` script.
 
     $ cd
-    $ git clone git@github.com:IndieBosco/home-profiles.git
+    $ git clone git@github.com:indiegogo/home-profiles.git
     $ home-profiles/mk_sym_links.sh
 
 The `mk_sym_links.sh` script will create sym-links only if a profile does NOT already exist.  Thus, you may want to rename the original to a backup name.
